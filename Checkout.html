@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header><div class="container"><h1>Final Checkout</h1></div></header>
+    <main class="container">
+        <div class="card">
+            <h2>Amount Due: <span id="chk-total">$0.00</span></h2>
+            <form id="checkoutForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="number" id="amountPaid" placeholder="Enter Amount to Pay" step="0.01" required>
+                <button type="submit" class="btn">Confirm Payment</button>
+            </form>
+        </div>
+    </main>
+    <script src="Appstore.js"></script>
+    <script src="CheckoutScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header><div class="container"><h1>Your Cart</h1><nav><ul><li><a href="Homepage.html">Back</a></li></ul></nav></div></header>
+    <main class="container card">
+        <table>
+            <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th></tr></thead>
+            <tbody id="cart-display"></tbody>
+        </table>
+        <div style="text-align: right; margin-top: 20px;">
+            <p>Sub-total: <span id="st-val">$0.00</span></p>
+            <p>Discount (10%): <span id="ds-val">-$0.00</span></p>
+            <p>Tax (15%): <span id="tx-val">$0.00</span></p>
+            <h3>Final Total: <span id="total-val">$0.00</span></h3>
+            <button class="btn" style="width: auto;" onclick="location.href='Checkout.html'">Proceed</button>
+        </div>
+    </main>
+    <script src="Appstore.js"></script>
+    <script src="CartScript.js"></script>
+</body>
+</html>

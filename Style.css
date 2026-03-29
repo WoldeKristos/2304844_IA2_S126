@@ -1,0 +1,83 @@
+/* --- Authentication Guard --- */
+#main-store-content { display: none; }
+#auth-section { display: block; }
+
+.auth-mode #main-store-content { display: block; }
+.auth-mode #auth-section { display: none; }
+
+/* --- General Theme --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0; padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container { 
+    width: 90%; 
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+header {
+    background: #004a99; color: #fff;
+    padding: 20px 0; border-bottom: #003366 3px solid;
+    text-align: center; position: sticky; top: 0; z-index: 1000;
+}
+
+/* --- Navigation: Fluid Flexbox --- */
+nav ul { 
+    list-style: none; padding: 10px 0; margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; /* Allows links to wrap to next line on tiny screens */
+    justify-content: center; 
+    gap: 15px; 
+}
+nav a { color: #fff; text-decoration: none; font-weight: bold; }
+
+.card {
+    background: #fff; padding: 25px; margin: 20px 0;
+    border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Fluid Product Grid (No Breakpoints Needed) --- */
+.product-grid {
+    display: grid; 
+    /* Automatically fits as many 280px columns as possible */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.product-card {
+    background: #fff; border: 1px solid #ddd; padding: 15px;
+    border-radius: 8px; text-align: center;
+}
+
+.product-card img { width: 100%; height: 250px; object-fit: contain; margin-bottom: 10px; }
+
+.btn {
+    background: #004a99; color: white; border: none;
+    padding: 12px 20px; border-radius: 4px; cursor: pointer;
+    font-weight: bold; width: 100%; transition: 0.3s;
+}
+
+.btn-logout { background: #dc3545; width: auto; margin-top: 10px; }
+
+/* --- Responsive Tables --- */
+.table-container { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 500px; }
+th, td { padding: 12px; border-bottom: 1px solid #eee; text-align: left; }
+
+/* --- Fluid Checkout Grid --- */
+.checkout-grid {
+    display: grid;
+    /* Switches from 1 column to 2 columns based on space */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+input {
+    width: 100%; padding: 12px; margin: 10px 0;
+    border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+}
